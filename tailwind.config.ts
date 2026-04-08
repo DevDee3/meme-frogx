@@ -55,6 +55,7 @@ export default {
           purple: "hsl(var(--neon-purple))",
           green: "hsl(var(--neon-green))",
           pink: "hsl(var(--neon-pink))",
+          cyan: "hsl(var(--neon-cyan))",
         },
         dark: {
           surface: "hsl(var(--dark-surface))",
