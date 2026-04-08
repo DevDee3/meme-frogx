@@ -40,7 +40,7 @@ const SocialsSection = () => {
                   : "border-border bg-card text-foreground hover:border-foreground"
               }`}
             >
-              <span className="text-xl">{s.icon}</span>
+              <span>{s.icon}</span>
               {s.name}
             </motion.a>
           ))}
