@@ -21,34 +21,37 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/90 backdrop-blur-xl border-b border-border" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? "bg-background/80 backdrop-blur-2xl border-b border-border/50"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="font-display text-xl font-black text-primary text-glow-purple">
+          <a href="#" className="font-display text-xl font-black text-primary text-glow-purple tracking-wider">
             $FROGX
           </a>
 
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                className="text-xs font-display tracking-[0.15em] text-muted-foreground hover:text-primary transition-colors duration-300"
               >
                 {link.label}
               </a>
             ))}
-            <a
+            <motion.a
+              whileHover={{ scale: 1.05, boxShadow: "0 0 25px hsl(270 85% 62% / 0.4)" }}
               href="https://pump.fun"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 rounded-lg bg-primary font-display text-xs font-bold text-primary-foreground box-glow-purple hover:scale-105 transition-transform"
+              className="px-5 py-2 rounded-lg bg-primary font-display text-xs font-bold text-primary-foreground box-glow-purple transition-all duration-300"
             >
               BUY NOW
-            </a>
+            </motion.a>
           </div>
 
           <button
@@ -70,14 +73,14 @@ const Navbar = () => {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border px-4 pb-4"
+          className="md:hidden bg-background/95 backdrop-blur-2xl border-b border-border/50 px-4 pb-4"
         >
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="block py-2 text-sm text-muted-foreground hover:text-primary"
+              className="block py-3 text-xs font-display tracking-[0.15em] text-muted-foreground hover:text-primary transition-colors"
             >
               {link.label}
             </a>
@@ -86,7 +89,7 @@ const Navbar = () => {
             href="https://pump.fun"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-2 block text-center px-4 py-2 rounded-lg bg-primary font-display text-xs font-bold text-primary-foreground"
+            className="mt-2 block text-center px-4 py-2.5 rounded-lg bg-primary font-display text-xs font-bold text-primary-foreground box-glow-purple"
           >
             BUY NOW
           </a>

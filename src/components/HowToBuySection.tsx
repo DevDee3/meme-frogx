@@ -29,18 +29,24 @@ const steps = [
 
 const HowToBuySection = () => {
   return (
-    <section id="how-to-buy" className="py-24 px-4">
-      <div className="max-w-5xl mx-auto">
+    <section id="how-to-buy" className="py-28 px-4 relative">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute bottom-0 left-1/4 w-[400px] h-[300px] bg-secondary/8 blur-[120px] rounded-full" />
+      </div>
+
+      <div className="max-w-5xl mx-auto relative z-10">
+        <div className="cyber-line w-32 mx-auto mb-12" />
+
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-display text-3xl sm:text-5xl font-black text-center text-secondary text-glow-green mb-16"
+          className="font-display text-3xl sm:text-5xl font-black text-center text-secondary text-glow-green mb-16 tracking-wider"
         >
           HOW TO BUY 🛒
         </motion.h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {steps.map((s, i) => (
             <motion.div
               key={s.step}
@@ -48,17 +54,19 @@ const HowToBuySection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.12, duration: 0.5 }}
-              whileHover={{ y: -5 }}
-              className="p-6 rounded-2xl border border-border bg-card"
+              whileHover={{ y: -5, boxShadow: "0 0 30px hsl(270 85% 62% / 0.15)" }}
+              className="futuristic-card p-6"
             >
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-2xl">
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-2xl">
                   {s.emoji}
                 </div>
                 <div>
-                  <span className="text-xs font-display text-primary mb-1 block">STEP {s.step}</span>
+                  <span className="text-[10px] font-display text-accent tracking-[0.3em] mb-1 block">
+                    STEP {s.step}
+                  </span>
                   <h3 className="font-display text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground font-body">{s.desc}</p>
+                  <p className="text-sm text-muted-foreground font-body leading-relaxed">{s.desc}</p>
                 </div>
               </div>
             </motion.div>
