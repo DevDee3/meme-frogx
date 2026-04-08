@@ -3,10 +3,8 @@ import { motion } from "framer-motion";
 
 const navLinks = [
   { label: "About", href: "#about" },
-  { label: "Tokenomics", href: "#tokenomics" },
-  { label: "Roadmap", href: "#roadmap" },
   { label: "How to Buy", href: "#how-to-buy" },
-  { label: "Community", href: "#community" },
+  { label: "Socials", href: "#community" },
 ];
 
 const Navbar = () => {
