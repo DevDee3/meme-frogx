@@ -9,13 +9,19 @@ const socials = [
 
 const SocialsSection = () => {
   return (
-    <section id="community" className="py-24 px-4">
-      <div className="max-w-3xl mx-auto text-center">
+    <section id="community" className="py-28 px-4 relative">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/2 right-1/4 w-[350px] h-[250px] bg-accent/8 blur-[120px] rounded-full" />
+      </div>
+
+      <div className="max-w-3xl mx-auto text-center relative z-10">
+        <div className="cyber-line w-32 mx-auto mb-12" />
+
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-display text-3xl sm:text-5xl font-black text-primary text-glow-purple mb-12"
+          className="font-display text-3xl sm:text-5xl font-black text-primary text-glow-purple mb-14 tracking-wider"
         >
           SOCIALS 🔗
         </motion.h2>
@@ -31,13 +37,21 @@ const SocialsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              whileHover={{ scale: 1.05, y: -3 }}
-              className={`flex items-center justify-center gap-3 px-8 py-5 rounded-2xl border font-display text-sm font-bold transition-colors ${
-                s.color === "primary"
-                  ? "border-primary bg-primary/10 text-primary box-glow-purple"
+              whileHover={{
+                scale: 1.05,
+                y: -3,
+                boxShadow: s.color === "primary"
+                  ? "0 0 30px hsl(270 85% 62% / 0.3)"
                   : s.color === "secondary"
-                  ? "border-secondary bg-secondary/10 text-secondary box-glow-green"
-                  : "border-border bg-card text-foreground hover:border-foreground"
+                  ? "0 0 30px hsl(160 90% 45% / 0.3)"
+                  : "0 0 30px hsl(0 0% 100% / 0.1)"
+              }}
+              className={`futuristic-card flex items-center justify-center gap-3 px-8 py-5 font-display text-sm font-bold transition-all duration-300 ${
+                s.color === "primary"
+                  ? "text-primary"
+                  : s.color === "secondary"
+                  ? "text-secondary"
+                  : "text-foreground"
               }`}
             >
               <span>{s.icon}</span>
