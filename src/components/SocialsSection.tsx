@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
+import { Send } from "lucide-react";
 
 const socials = [
-  { name: "Twitter / X", icon: "𝕏", href: "https://x.com", color: "foreground" },
-  { name: "Telegram", icon: "✈️", href: "https://t.me", color: "primary" },
-  { name: "DexScreener", icon: "📊", href: "https://dexscreener.com", color: "secondary" },
+  { name: "Twitter / X", icon: <span className="text-xl">𝕏</span>, href: "https://x.com", color: "foreground" },
+  { name: "Telegram", icon: <Send size={20} />, href: "https://t.me", color: "primary" },
+  { name: "DexScreener", icon: <span className="text-xl">📊</span>, href: "https://dexscreener.com", color: "secondary" },
 ];
 
 const SocialsSection = () => {
