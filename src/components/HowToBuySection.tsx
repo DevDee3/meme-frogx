@@ -4,7 +4,7 @@ const steps = [
   {
     step: "01",
     title: "Get Phantom Wallet",
-    desc: "Download the Phantom wallet extension or mobile app. It's the go-to Solana wallet.",
+    desc: "Download the Phantom wallet app. It's the go-to Solana wallet.",
     emoji: "👻",
   },
   {
@@ -22,7 +22,7 @@ const steps = [
   {
     step: "04",
     title: "Swap for $FROGX",
-    desc: "Paste the contract address, set your slippage, and swap SOL for $FROGX. Welcome aboard! 🐸",
+    desc: "Paste the contract address, and swap SOL for $FROGX. Welcome aboard! 🐸",
     emoji: "🔄",
   },
 ];

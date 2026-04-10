@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Send, Copy, Check } from "lucide-react";
 
-const CONTRACT_ADDRESS = "FRoGX...7xK9pQr5mN2wB4vZ8dH3jL6cT1fA0eY";
+const CONTRACT_ADDRESS = "AHkiy...N2wB4vZ8dH3jL6cT1fA0pump";
 
 const Footer = () => {
   const [copied, setCopied] = useState(false);
@@ -46,42 +46,10 @@ const Footer = () => {
           </motion.p>
         )}
 
-        <div className="flex justify-center gap-8 mt-10 mb-10">
-          <a
-            href="https://x.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors text-sm font-display tracking-wider"
-          >
-            𝕏 Twitter
-          </a>
-          <a
-            href="https://t.me"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm font-display tracking-wider"
-          >
-            <Send size={14} /> Telegram
-          </a>
-          <a
-            href="https://dexscreener.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-muted-foreground hover:text-secondary transition-colors text-sm font-display tracking-wider"
-          >
-            📊 DexScreener
-          </a>
-        </div>
-
         <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent mx-auto mb-6" />
 
-        <p className="text-xs text-muted-foreground/60 font-body max-w-2xl mx-auto">
-          ⚠️ $FROGX is a meme coin with no intrinsic value or expectation of financial return.
-          This is not financial advice. Always DYOR. Trade at your own risk. 🐸
-        </p>
-
         <p className="text-xs text-muted-foreground/40 mt-4 font-display tracking-widest">
-          © 2025 $FROGX — ALL MEMES RESERVED
+          © 2026 $FROGX — ALL MEMES RESERVED
         </p>
       </div>
     </footer>

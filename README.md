@@ -4,7 +4,7 @@
 
 ## About
 
-$FROGX is a community-driven Solana meme coin built on pure, unfiltered degen energy. No VC funding. No team tokens. No BS — just a based frog with sunglasses, a gold chain, and a dream of making everyone rich.
+$FROGX is a community-driven Solana meme coin built on pure, unfiltered degen energy. Just a based frog with sunglasses, a gold chain, and a dream of making everyone rich.
 
 ## Links
 
