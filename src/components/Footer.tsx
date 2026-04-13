@@ -46,33 +46,6 @@ const Footer = () => {
           </motion.p>
         )}
 
-        <div className="flex justify-center gap-8 mt-10 mb-10">
-          <a
-            href="https://x.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors text-sm font-display tracking-wider"
-          >
-            𝕏 Twitter
-          </a>
-          <a
-            href="https://t.me"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm font-display tracking-wider"
-          >
-            <Send size={14} /> Telegram
-          </a>
-          <a
-            href="https://dexscreener.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-muted-foreground hover:text-secondary transition-colors text-sm font-display tracking-wider"
-          >
-            📊 DexScreener
-          </a>
-        </div>
-
         <p className="text-xs text-muted-foreground/40 mt-4 font-display tracking-widest">
           © 2026 $FROGX — ALL MEMES RESERVED
         </p>
