@@ -73,15 +73,8 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent mx-auto mb-6" />
-
-        <p className="text-xs text-muted-foreground/60 font-body max-w-2xl mx-auto">
-          ⚠️ $FROGX is a meme coin with no intrinsic value or expectation of financial return.
-          This is not financial advice. Always DYOR. Trade at your own risk. 🐸
-        </p>
-
         <p className="text-xs text-muted-foreground/40 mt-4 font-display tracking-widest">
-          © 2025 $FROGX — ALL MEMES RESERVED
+          © 2026 $FROGX — ALL MEMES RESERVED
         </p>
       </div>
     </footer>
