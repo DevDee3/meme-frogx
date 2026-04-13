@@ -21,8 +21,8 @@ const steps = [
   },
   {
     step: "04",
-    title: "Swap for $FROGX",
-    desc: "Paste the contract address, and swap SOL for $FROGX. Welcome aboard! 🐸",
+    title: "Swap for $FGX",
+    desc: "Paste the contract address, and swap SOL for $FGX. Welcome aboard! 🐸",
     emoji: "🔄",
   },
 ];
@@ -43,7 +43,7 @@ const HowToBuySection = () => {
           viewport={{ once: true }}
           className="font-display text-3xl sm:text-5xl font-black text-center text-secondary text-glow-green mb-16 tracking-wider"
         >
-          HOW TO BUY 🛒
+          HOW TO BUY
         </motion.h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">

@@ -20,7 +20,7 @@ const AboutSection = () => {
           className="text-center"
         >
           <h2 className="font-display text-3xl sm:text-5xl font-black text-primary text-glow-purple mb-10 tracking-wider">
-            WHAT IS $FROGX? 🐸
+            WHAT IS FROGX? 🐸
           </h2>
 
           <div className="futuristic-card p-8 sm:p-12 mb-8">
@@ -37,7 +37,7 @@ const AboutSection = () => {
                 </span>
               </p>
               <p className="text-2xl pt-2">
-                🐸 + 🚀 = <span className="text-secondary font-bold text-glow-green">$FROGX</span>
+                🐸 + 🚀 = <span className="text-secondary font-bold text-glow-green">$FGX</span>
               </p>
             </div>
           </div>

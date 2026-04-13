@@ -1,10 +1,10 @@
-# $FROGX 🐸 — The Fastest Frog on Solana
+# FROGX 🐸 — The Fastest Frog on Solana
 
 > Born from the swamps of Solana. No roadmap needed when you're already on the moon. Just vibes, memes, and 400ms finality. 🐸⚡
 
 ## About
 
-$FROGX is a community-driven Solana meme coin built on pure, unfiltered degen energy. Just a based frog with sunglasses, a gold chain, and a dream of making everyone rich.
+$FGX is a community-driven Solana meme coin built on pure, unfiltered degen energy. Just a based frog with sunglasses, a gold chain, and a dream of making everyone rich.
 
 ## Links
 
@@ -20,7 +20,7 @@ $FROGX is a community-driven Solana meme coin built on pure, unfiltered degen en
 
 | Property | Value |
 |---|---|
-| **Ticker** | $FROGX |
+| **Ticker** | $FGX |
 | **Blockchain** | Solana |
 | **Contract** | `FROGX...pump` |
 | **Total Supply** | 1,000,000,000 |

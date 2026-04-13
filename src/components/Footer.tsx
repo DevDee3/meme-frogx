@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Send, Copy, Check } from "lucide-react";
 
-const CONTRACT_ADDRESS = "AHkiy...N2wB4vZ8dH3jL6cT1fA0pump";
+const CONTRACT_ADDRESS = "Hk16c...7xK9pQr5mN2wB4vZ8dH3jL6cT1fApump";
 
 const Footer = () => {
   const [copied, setCopied] = useState(false);
@@ -46,10 +46,8 @@ const Footer = () => {
           </motion.p>
         )}
 
-        <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent mx-auto mb-6" />
-
         <p className="text-xs text-muted-foreground/40 mt-4 font-display tracking-widest">
-          © 2026 $FROGX — ALL MEMES RESERVED
+          © 2026 FROGX — ALL MEMES RESERVED
         </p>
       </div>
     </footer>
