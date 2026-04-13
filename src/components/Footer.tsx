@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Send, Copy, Check } from "lucide-react";
 
-const CONTRACT_ADDRESS = "FRoGX...7xK9pQr5mN2wB4vZ8dH3jL6cT1fA0eY";
+const CONTRACT_ADDRESS = "Hk16c...7xK9pQr5mN2wB4vZ8dH3jL6cT1fApump";
 
 const Footer = () => {
   const [copied, setCopied] = useState(false);
