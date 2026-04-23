@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import mascot from "@/assets/mascot.png";
-import swampBg from "@/assets/swamp-bg.jpg";
+
 
 const FloatingEmoji = ({ emoji, delay, x, y }: { emoji: string; delay: number; x: string; y: string }) => (
   <motion.div
@@ -16,13 +16,6 @@ const FloatingEmoji = ({ emoji, delay, x, y }: { emoji: string; delay: number; x
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-grid">
-      {/* Swamp background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-40"
-        style={{ backgroundImage: `url(${swampBg})` }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
-
       {/* Layered glow orbs */}
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full bg-primary/15 blur-[150px] animate-pulse_glow" />
       <div className="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] rounded-full bg-secondary/15 blur-[130px] animate-pulse_glow" style={{ animationDelay: "1s" }} />
